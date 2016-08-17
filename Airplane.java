@@ -8,6 +8,8 @@ public class Airplane {
     
     private boolean[] firstClass;
     private boolean[] economyClass;
+    
+    //the numbers represent the seat number on the airplane.
     private final int[] windowFirstSeat = {0, 3, 4, 7, 8, 11, 12, 15, 16, 19};
     private final int[] aisleFirstSeat = {1, 2, 5, 6, 9, 10, 13, 14, 17, 18};
     private final int[] windowEcoSeat = {0, 5, 6, 11, 12, 17, 18, 23, 24, 29, 30, 35, 36, 41, 42, 47, 48, 53, 54, 59, 60, 65, 66, 71, 72, 77, 78, 83, 84, 89};
@@ -24,6 +26,7 @@ public class Airplane {
         this.seating = seating;
     }
     
+    //this function adds the passenger onto the flight depending on what air class they choose as well as the number of passengers they have
     public void addPassenger(int airClass, int seating)
     {
         boolean success = false;
@@ -147,6 +150,7 @@ public class Airplane {
         }            
     }
     
+    //this function shows the seating arrangement on the airplane as well as display whether a seat is already taken
     public void showSeating()
     {
         for(int i = 0; i < firstClass.length; i++)
