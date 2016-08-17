@@ -4,6 +4,8 @@ import java.util.Scanner;
  *
  * @author Victoria
  */
+ 
+// this is a user interactive program where the user gets to decide on what air class they want to be in as well as the number of passengers they want to book the flight for
 public class HW5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
